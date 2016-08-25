@@ -3,6 +3,7 @@ services:
   fpm:
     build: .
     container_name: classificators_fpm
+    env_file: ".env"
     depends_on:
       - db
     volumes:
